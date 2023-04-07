@@ -1,3 +1,5 @@
+package Abilities;
+
 public class MeleeAttack implements Attack{
 
     Monster attacker;

@@ -1,11 +1,13 @@
+package Monsters;
+
 import java.util.HashMap;
 import java.util.Objects;
 
 public abstract class Monster {
 
-    private int hp;
-    private int xp = 10;
-    private int maxHP;
+    private Integer hp;
+    private Integer xp = 10;
+    private Integer maxHP;
     private HashMap<String, Integer> items;
 
     public Monster(Integer maxHP, Integer xp, HashMap<String, Integer> items) {
@@ -15,15 +17,15 @@ public abstract class Monster {
         this.items = items;
     }
 
-    public int getHp() {
+    public Integer getHp() {
         return hp;
     }
 
-    public void setHp(int hp) {
+    public void setHp(Integer hp) {
         this.hp = hp;
     }
 
-    public int getXp() {
+    public Integer getXp() {
         return xp;
     }
 
@@ -35,7 +37,7 @@ public abstract class Monster {
         this.items = items;
     }
 
-    public int getMaxHP() {
+    public Integer getMaxHP() {
         return maxHP;
     }
 
